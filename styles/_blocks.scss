@@ -18,8 +18,8 @@
       margin: 0 15px 30px;
     }
 
-    border: 1px solid $brand_color;
-    border-radius: 4px;
+    border: 1px solid #bbb;
+    border-radius: 0;
     box-sizing: border-box;
     color: $brand_color;
     display: flex;
@@ -52,7 +52,22 @@
         position: relative;
       }
 
-      a { color: $text_color; }
+      a {
+        color: #999;
+        height: 245px;
+        display: flex;
+        flex-direction: column;
+        h4 {
+          margin-top: auto;
+          font-weight: 500;
+        }
+        &:nth-child(1)::before { content: url(/hc/assets/file-invoice-dollar); }
+        &:nth-child(2)::before { content: url(/hc/assets/clipboard-check.svg); }
+        &:nth-child(3)::before { content: url(/hc/assets/clipboard-list.svg); }
+        &:nth-child(4)::before { content: url(/hc/assets/users.svg); }
+        &:nth-child(5)::before { content: url(/hc/assets/laptop.svg); }
+        &:nth-child(6)::before { content: url(/hc/assets/cogs.svg); }
+      }
     }
   }
 
