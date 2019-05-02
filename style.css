@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto:300,400,500,700);
 /***** Base *****/
 * {
   box-sizing: border-box;
@@ -36,7 +37,7 @@ h2 {
 
 h3 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h4 {
@@ -842,8 +843,8 @@ ul {
 }
 
 .blocks-item {
-  border: 1px solid $brand_color;
-  border-radius: 4px;
+  border: 1px solid #bbb;
+  border-radius: 0;
   box-sizing: border-box;
   color: $brand_color;
   display: flex;
@@ -883,7 +884,39 @@ ul {
 }
 
 .blocks-item-internal a {
-  color: $text_color;
+  color: #999;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blocks-item-internal a h4 {
+  margin-top: auto;
+  font-weight: 500;
+}
+
+.blocks-item-internal a:nth-child(1)::before {
+  content: url(/hc/assets/file-invoice-dollar);
+}
+
+.blocks-item-internal a:nth-child(2)::before {
+  content: url(/hc/assets/clipboard-check.svg);
+}
+
+.blocks-item-internal a:nth-child(3)::before {
+  content: url(/hc/assets/clipboard-list.svg);
+}
+
+.blocks-item-internal a:nth-child(4)::before {
+  content: url(/hc/assets/users.svg);
+}
+
+.blocks-item-internal a:nth-child(5)::before {
+  content: url(/hc/assets/laptop.svg);
+}
+
+.blocks-item-internal a:nth-child(6)::before {
+  content: url(/hc/assets/cogs.svg);
 }
 
 .blocks-item-link {
@@ -1217,10 +1250,10 @@ ul {
 
 /***** Article *****/
 .article {
-  /*
-  * The article grid is defined this way to optimize readability:
-  * Sidebar | Content | Free space
-  * 17%     | 66%     | 17%
+  /*
+  * The article grid is defined this way to optimize readability:
+  * Sidebar | Content | Free space
+  * 17%     | 66%     | 17%
   */
   flex: 1 0 auto;
 }
@@ -2304,10 +2337,10 @@ ul {
 }
 
 /***** Post *****/
-/*
-* The post grid is defined this way:
-* Content | Sidebar
-* 70%     | 30%
+/*
+* The post grid is defined this way:
+* Content | Sidebar
+* 70%     | 30%
 */
 .post {
   flex: 1;
@@ -2516,7 +2549,7 @@ ul {
 }
 
 .post-sidebar h5 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media (min-width: 1024px) {
@@ -3138,7 +3171,7 @@ ul {
 
 .request-sidebar h5 {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
 }
 
@@ -3952,7 +3985,7 @@ ul {
 }
 
 .profile-activity-description span:first-child {
-  font-weight: 600;
+  font-weight: 500;
   display: inline;
 }
 
