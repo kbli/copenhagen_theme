@@ -871,6 +871,42 @@ ul {
   text-decoration: none;
 }
 
+.blocks-item a {
+  color: #999;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blocks-item a h4 {
+  margin-top: auto;
+  font-weight: 500;
+}
+
+.blocks-item a:nth-child(1)::before {
+  content: url(/hc/assets/file-invoice-dollar);
+}
+
+.blocks-item a:nth-child(2)::before {
+  content: url(/hc/assets/clipboard-check.svg);
+}
+
+.blocks-item a:nth-child(3)::before {
+  content: url(/hc/assets/clipboard-list.svg);
+}
+
+.blocks-item a:nth-child(4)::before {
+  content: url(/hc/assets/users.svg);
+}
+
+.blocks-item a:nth-child(5)::before {
+  content: url(/hc/assets/laptop.svg);
+}
+
+.blocks-item a:nth-child(6)::before {
+  content: url(/hc/assets/cogs.svg);
+}
+
 .blocks-item-internal {
   background-color: transparent;
   border: 1px solid #ddd;
@@ -884,39 +920,7 @@ ul {
 }
 
 .blocks-item-internal a {
-  color: #999;
-  height: 245px;
-  display: flex;
-  flex-direction: column;
-}
-
-.blocks-item-internal a h4 {
-  margin-top: auto;
-  font-weight: 500;
-}
-
-.blocks-item-internal a:nth-child(1)::before {
-  content: url(/hc/assets/file-invoice-dollar);
-}
-
-.blocks-item-internal a:nth-child(2)::before {
-  content: url(/hc/assets/clipboard-check.svg);
-}
-
-.blocks-item-internal a:nth-child(3)::before {
-  content: url(/hc/assets/clipboard-list.svg);
-}
-
-.blocks-item-internal a:nth-child(4)::before {
-  content: url(/hc/assets/users.svg);
-}
-
-.blocks-item-internal a:nth-child(5)::before {
-  content: url(/hc/assets/laptop.svg);
-}
-
-.blocks-item-internal a:nth-child(6)::before {
-  content: url(/hc/assets/cogs.svg);
+  color: $text_color;
 }
 
 .blocks-item-link {
