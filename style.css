@@ -887,6 +887,10 @@ ul {
   content: url(/hc/assets/file-invoice-dollar);
 }
 
+.blocks-item a:nth-child(1)::before {
+  content: url(/hc/assets/file-invoice-dollar);
+}
+
 .blocks-item a:nth-child(2)::before {
   content: url(/hc/assets/clipboard-check.svg);
 }
@@ -900,7 +904,7 @@ ul {
 }
 
 .blocks-item a:nth-child(5)::before {
-  content: url(/hc/assets/laptop.svg);
+  content: url($assets-laptop-svg);
 }
 
 .blocks-item a:nth-child(6)::before {
