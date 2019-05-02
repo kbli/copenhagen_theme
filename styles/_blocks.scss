@@ -45,17 +45,18 @@
       height: 245px;
       display: flex;
       flex-direction: column;
+      align-items: center;
       h4 {
         margin-top: auto;
         font-weight: 500;
       }
     }
-    &:nth-child(1) a::before { content: url($assets-file-invoice-dollar-svg); }
-    &:nth-child(2) a::before { content: url($assets-clipboard-check-svg); }
-    &:nth-child(3) a::before { content: url($assets-clipboard-list-svg); }
-    &:nth-child(4) a::before { content: url($assets-users-svg); }
-    &:nth-child(5) a::before { content: url($assets-laptop-svg); }
-    &:nth-child(6) a::before { content: url($assets-cogs-svg); }
+    &:nth-child(1) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-file-invoice-dollar-svg); }
+    &:nth-child(2) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-clipboard-check-svg); }
+    &:nth-child(3) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-clipboard-list-svg); }
+    &:nth-child(4) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-users-svg); }
+    &:nth-child(5) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-laptop-svg); }
+    &:nth-child(6) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-cogs-svg); }
 
     &-internal {
       background-color: transparent;
