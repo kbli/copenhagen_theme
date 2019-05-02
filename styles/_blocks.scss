@@ -49,15 +49,13 @@
         margin-top: auto;
         font-weight: 500;
       }
-      &:nth-child(1)::before { content: url(/hc/assets/file-invoice-dollar); }
-      &:nth-child(1)::before { content: url(/hc/assets/file-invoice-dollar); }
-      &:nth-child(2)::before { content: url(/hc/assets/clipboard-check.svg); }
-      &:nth-child(3)::before { content: url(/hc/assets/clipboard-list.svg); }
-      &:nth-child(4)::before { content: url(/hc/assets/users.svg); }
-      //&:nth-child(5)::before { content: url(/hc/assets/laptop.svg); }
-      &:nth-child(5)::before { content: url($assets-laptop-svg); }
-      &:nth-child(6)::before { content: url(/hc/assets/cogs.svg); }
     }
+    &:nth-child(1) a::before { content: url($assets-file-invoice-dollar-svg); }
+    &:nth-child(2) a::before { content: url($assets-clipboard-check-svg); }
+    &:nth-child(3) a::before { content: url($assets-clipboard-list-svg); }
+    &:nth-child(4) a::before { content: url($assets-users-svg); }
+    &:nth-child(5) a::before { content: url($assets-laptop-svg); }
+    &:nth-child(6) a::before { content: url($assets-cogs-svg); }
 
     &-internal {
       background-color: transparent;
