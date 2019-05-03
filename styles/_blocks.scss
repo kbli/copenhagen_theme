@@ -46,17 +46,29 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      background: center 30% no-repeat;
+      background-size: 40% 40%;
+      background-color: rgba(255, 255, 255, 0.7);
+      background-blend-mode: lighten;
+
       h4 {
         margin-top: auto;
         font-weight: 500;
       }
     }
-    &:nth-child(1) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-file-invoice-dollar-svg); }
-    &:nth-child(2) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-clipboard-check-svg); }
-    &:nth-child(3) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-clipboard-list-svg); }
-    &:nth-child(4) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-users-svg); }
-    &:nth-child(5) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-laptop-svg); }
-    &:nth-child(6) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-cogs-svg); }
+    //&:nth-child(1) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-file-invoice-dollar-svg); }
+    //&:nth-child(2) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-clipboard-check-svg); }
+    //&:nth-child(3) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-clipboard-list-svg); }
+    //&:nth-child(4) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-users-svg); }
+    //&:nth-child(5) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-laptop-svg); }
+    //&:nth-child(6) a::before { width: 100px; color: #ccc; opacity: 0.25; content: url($assets-cogs-svg); }
+    
+    &:nth-child(1) a { background-image: url($assets-file-invoice-dollar-svg); }
+    &:nth-child(2) a { background-image: url($assets-clipboard-check-svg); }
+    &:nth-child(3) a { background-image: url($assets-clipboard-list-svg); }
+    &:nth-child(4) a { background-image: url($assets-users-svg); }
+    &:nth-child(5) a { background-image: url($assets-laptop-svg); }
+    &:nth-child(6) a { background-image: url($assets-cogs-svg); }
 
     &-internal {
       background-color: transparent;
