@@ -499,7 +499,7 @@ ul {
 
 .nav-wrapper a:hover, .nav-wrapper a:focus, .nav-wrapper a:active {
   background-color: transparent;
-  color: $link_color;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -557,12 +557,12 @@ ul {
 }
 
 .user-info > [role="button"]:hover, .user-info > [role="button"]:focus {
-  color: $link_color;
+  color: #fff;
   background-color: transparent;
 }
 
 .user-info > [role="button"]::after {
-  color: $link_color;
+  color: #fff;
   padding-right: 15px;
 }
 
