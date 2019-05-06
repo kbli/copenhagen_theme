@@ -447,11 +447,11 @@ ul {
   }
 }
 
-.logo img {
+.logo {
   line-height: 0;
 }
 
-.logo img .logo img {
+.logo img {
   height: 37px;
 }
 
