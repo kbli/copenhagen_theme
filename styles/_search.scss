@@ -4,7 +4,7 @@
 
   input[type="search"] {
     border: 1px solid $border-color;
-    border-radius: 30px;
+    border-radius: 0;
     box-sizing: border-box;
     color: $field-text-color;
     height: 40px;
@@ -41,7 +41,7 @@
     }
   }
 
-  &-full input[type="search"] {
+  /* &-full input[type="search"] {
     border: 1px solid #fff;
-  }
+  } */
 }
