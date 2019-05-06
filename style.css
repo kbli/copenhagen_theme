@@ -497,7 +497,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 1208px) {
+@media screen and (min-width: 768px) {
   .nav-wrapper a {
     color: #fff;
   }
@@ -513,7 +513,7 @@ ul {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 1208px) {
+@media screen and (min-width: 768px) {
   .nav-wrapper a:hover, .nav-wrapper a:focus, .nav-wrapper a:active {
     color: #fff;
   }
