@@ -444,7 +444,7 @@ ul {
 }
 
 .logo img {
-  max-height: 37px;
+  height: 37px;
 }
 
 .user-nav {
@@ -843,7 +843,7 @@ ul {
 }
 
 .blocks-item {
-  background: #ddd;
+  background: #eee;
   border-radius: 0;
   box-sizing: border-box;
   color: $brand_color;
@@ -863,12 +863,12 @@ ul {
 }
 
 .blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: $brand_color;
+  background: #e3e3e3;
 }
 
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
   text-decoration: none;
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 .blocks-item a {
@@ -879,7 +879,7 @@ ul {
   align-items: center;
   background: center 30% no-repeat;
   background-size: 40% 40%;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .blocks-item a h4 {
