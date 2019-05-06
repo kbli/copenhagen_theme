@@ -1,6 +1,9 @@
 /***** Header *****/
 $header-height: 71px;
 
+.header-container {
+  background: #0b2841;
+}
 .header {
   @include max-width-container;
   position: relative;
@@ -43,7 +46,7 @@ $header-height: 71px;
     }
 
     border: 0;
-    color: $link_color;
+    color: #fff;
     display: none;
     font-size: 14px;
     padding: 0 20px 0 0;
