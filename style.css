@@ -8,7 +8,7 @@
 body {
   background-color: $background_color;
   color: $text_color;
-  font-family: $text_font;
+  font-family: Roboto, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -22,7 +22,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading_font;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   margin-top: 0;
 }
@@ -843,7 +843,7 @@ ul {
 }
 
 .blocks-item {
-  border: 1px solid #bbb;
+  background: #ddd;
   border-radius: 0;
   box-sizing: border-box;
   color: $brand_color;
@@ -867,20 +867,19 @@ ul {
 }
 
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: $brand_text_color;
   text-decoration: none;
+  opacity: 0.9;
 }
 
 .blocks-item a {
-  color: #999;
+  color: #000;
   height: 245px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: center 30% no-repeat;
   background-size: 40% 40%;
-  background-color: rgba(255, 255, 255, 0.7);
-  background-blend-mode: lighten;
+  opacity: 0.7;
 }
 
 .blocks-item a h4 {
@@ -1878,7 +1877,7 @@ ul {
   -webkit-hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  font-family: $text_font;
+  font-family: Roboto, sans-serif;
   line-height: 1.6;
   overflow-x: auto;
 }
@@ -2158,7 +2157,7 @@ ul {
   content: attr(data-follower-count);
   color: $brand_color;
   display: inline-block;
-  font-family: $heading_font;
+  font-family: "Roboto Condensed", sans-serif;
   margin-left: 15px;
   padding-left: 10px;
   position: absolute;
@@ -2427,7 +2426,7 @@ ul {
 }
 
 .post-content {
-  font-family: $text_font;
+  font-family: Roboto, sans-serif;
   line-height: 1.6;
   word-break: break-word;
 }
