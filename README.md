@@ -1,3 +1,58 @@
+# Lincoln Notes
+
+Contact Kevin Becker for more info
+
+## Working with Zendesk Custom Theme (basic method)
+
+### Install Ruby
+
+1. Go to https://rubyinstaller.org/downloads/ and download WITHOUT DEVKIT > Ruby 2.3.3 (x64) and install
+2. Download DEVELOPMENT KIT (OLD) For use with Ruby 2.0 to 2.3 (x64 - 64bits only): DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe
+3. Extract to C:/RubyDevKit/
+4. Open "Start Command Prompt with Ruby" (installed in step 1)
+5. CD to C:/RubyDevKit/
+6. Run `ruby dk.rb init` and then `ruby dk.rb install` (https://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
+7. Note that you may need to add ruby to your PATH
+
+### Install SassC
+1. Run `gem install sassc`
+
+### Developing
+1. Work with the scss files for styles, not the css file
+
+### Updating Theme in Zendesk
+1. When done updating, go into manifest.json and increment the version number (Zendesk will throw an error if you try to pull an updated theme with the same version number)
+2. CD into your project and run ruby ./bin/compile.rb to compile the sass into css
+3. Commit & push your updated files included the manifest.json, scss files, css file, etc.
+4. In Zendesk guide under themes find this theme (currently called "Custom Theme") click the 3 vertical dots and select Update from Github
+
+---
+
+## Working with Zendesk Custom Theme (advanced method: Windows 7 VM)
+### Note: This method does not currently work correctly do to some authentication problems
+
+### Install Ruby as above
+
+### Install ZAT
+
+1. Run `gem install rake` (https://develop.zendesk.com/hc/en-us/articles/360001075048)
+2. Run `gem update zendesk_apps_tools`
+
+### Setting env variable
+1. Download certificate: https://curl.haxx.se/ca/cacert.pem
+2. Put it somewhere permanent (I added to C:/RubyDevKit/)
+3. In explorer right click This PC > Properties > Advanced System Settings > Environment Variables...
+4. Under User variables select New... add Variable Name: SSL_CERT_FILE Variable Value: C:\RubyDevKit\cacert.pem or the path you added the file to above
+
+### Running
+1. CD to the project directory
+2. Run `zat theme preview`
+3. Enter https://lincolninvestment.zendesk.com/
+4. Enter lincoln email and password
+5. Get an error because either some settings/permissions in Zendesk need to be updated or OneLogin integration is breaking this.
+
+---
+
 # Copenhagen Theme by Zendesk
 
 The Copenhagen theme is the default Zendesk Guide theme. It is designed to be responsive and accessible.
