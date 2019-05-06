@@ -863,7 +863,6 @@ ul {
 
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
   text-decoration: none;
-  opacity: 0.5;
 }
 
 .blocks-item a {
