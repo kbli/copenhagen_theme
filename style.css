@@ -550,7 +550,7 @@ ul {
 
 .user-info > [role="button"] {
   border: 0;
-  color: $link_color;
+  color: #fff;
   min-width: 0;
   padding: 0;
   white-space: nowrap;
