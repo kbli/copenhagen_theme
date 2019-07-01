@@ -834,6 +834,7 @@ ul {
   .sub-nav {
     align-items: baseline;
     flex-direction: row;
+    border-bottom: 1px solid #ddd;
   }
 }
 
@@ -1159,12 +1160,6 @@ ul {
   flex: 1;
 }
 
-@media (min-width: 1024px) {
-  .category-content {
-    flex: 0 0 80%;
-  }
-}
-
 .section-tree {
   display: flex;
   flex-direction: column;
@@ -1180,21 +1175,36 @@ ul {
 
 .section-tree .section {
   flex: initial;
+  background: #f3f3f3;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
   .section-tree .section {
-    flex: 0 0 45%;
+    flex: 0 0 48%;
     /* Two columns for tablet and desktop. Leaving 5% separation between columns */
   }
 }
 
 .section-tree-title {
   margin-bottom: 0;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.section-tree-title:last-child {
+  border-bottom: none;
 }
 
 .section-tree-title a {
   color: $text_color;
+  text-decoration: none;
+}
+
+.section-tree-title a:hover {
+  color: #222;
 }
 
 .section-tree .see-all-articles {
@@ -1204,11 +1214,17 @@ ul {
 
 .article-list-item {
   font-size: 16px;
-  padding: 15px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .article-list-item a {
   color: $text_color;
+  text-decoration: none;
+}
+
+.article-list-item a:hover {
+  color: #222;
 }
 
 .article-list-item .icon-lock::before {
