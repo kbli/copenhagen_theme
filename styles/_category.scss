@@ -34,9 +34,6 @@
     font-weight: bold;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
-    &:last-child {
-      border-bottom: none;
-    }
 
     a {
       color: $text_color;
@@ -58,6 +55,9 @@
     font-size: $font-size-bigger;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    &:last-child {
+      border-bottom: none;
+    }
 
     a {
       color: $text_color;

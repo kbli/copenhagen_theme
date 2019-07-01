@@ -7,8 +7,11 @@
 
   &-content {
     @include desktop {
-      flex: 0 0 80%;
+      //flex: 0 0 80%;
     }
+    background: #f3f3f3;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
     flex: 1;
   }
 

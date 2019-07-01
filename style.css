@@ -1194,10 +1194,6 @@ ul {
   padding-bottom: 10px;
 }
 
-.section-tree-title:last-child {
-  border-bottom: none;
-}
-
 .section-tree-title a {
   color: $text_color;
   text-decoration: none;
@@ -1216,6 +1212,10 @@ ul {
   font-size: 16px;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
+}
+
+.article-list-item:last-child {
+  border-bottom: none;
 }
 
 .article-list-item a {
@@ -1243,13 +1243,10 @@ ul {
 }
 
 .section-content {
+  background: #f3f3f3;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
   flex: 1;
-}
-
-@media (min-width: 1024px) {
-  .section-content {
-    flex: 0 0 80%;
-  }
 }
 
 .section-subscribe .dropdown-toggle::after {
