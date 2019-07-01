@@ -29,7 +29,7 @@ Contact Kevin Becker for more info
 ---
 
 ## Working with Zendesk Custom Theme (advanced method: Windows 7 VM)
-### Note: This method does not currently work correctly do to some authentication problems
+### Note: This method does not currently work correctly due to some authentication problems
 
 ### Install Ruby as above
 
