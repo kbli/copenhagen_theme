@@ -2,6 +2,7 @@
   @include tablet {
     align-items: baseline;
     flex-direction: row;
+    border-bottom: 1px solid #ddd;
   }
 
   display: flex;
