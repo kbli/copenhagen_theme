@@ -865,7 +865,6 @@ ul {
 }
 
 .blocks-item {
-  background: #eee;
   border-radius: 0;
   box-sizing: border-box;
   color: $brand_color;
@@ -873,14 +872,20 @@ ul {
   flex: 1 0 340px;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   max-width: 100%;
   text-align: center;
+  /* &:nth-child(1) a { background-image: url($assets-file-invoice-dollar-svg); }
+    &:nth-child(2) a { background-image: url($assets-clipboard-check-svg); }
+    &:nth-child(3) a { background-image: url($assets-clipboard-list-svg); }
+    &:nth-child(4) a { background-image: url($assets-users-svg); }
+    &:nth-child(5) a { background-image: url($assets-laptop-svg); }
+    &:nth-child(6) a { background-image: url($assets-cogs-svg); } */
 }
 
 @media (min-width: 768px) {
   .blocks-item {
-    margin: 0 15px 30px;
+    margin: 0 10px 20px;
   }
 }
 
@@ -889,47 +894,36 @@ ul {
 }
 
 .blocks-item a {
-  color: #000;
-  height: 245px;
+  color: #555;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  justify-content: space-around;
   background: center 30% no-repeat;
   background-size: 40% 40%;
-  opacity: 0.4;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  background: #eeeeee;
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #eeeeee 100%);
+  background: -webkit-linear-gradient(top, #f9f9f9 0%, #eeeeee 100%);
+  background: linear-gradient(to bottom, #f9f9f9 0%, #eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#eeeeee',GradientType=0 );
 }
 
 .blocks-item a:hover, .blocks-item a:focus, .blocks-item a:active {
-  opacity: 0.5;
+  color: #fff;
+  background: #7199c6;
+  background: -moz-linear-gradient(top, #a5c3e2 0%, #7199c6 100%);
+  background: -webkit-linear-gradient(top, #a5c3e2 0%, #7199c6 100%);
+  background: linear-gradient(to bottom, #a5c3e2 0%, #7199c6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5c3e2', endColorstr='#7199c6',GradientType=0 );
 }
 
 .blocks-item a h4 {
-  margin-top: auto;
+  margin-top: auto 0;
   font-weight: 500;
-}
-
-.blocks-item:nth-child(1) a {
-  background-image: url($assets-file-invoice-dollar-svg);
-}
-
-.blocks-item:nth-child(2) a {
-  background-image: url($assets-clipboard-check-svg);
-}
-
-.blocks-item:nth-child(3) a {
-  background-image: url($assets-clipboard-list-svg);
-}
-
-.blocks-item:nth-child(4) a {
-  background-image: url($assets-users-svg);
-}
-
-.blocks-item:nth-child(5) a {
-  background-image: url($assets-laptop-svg);
-}
-
-.blocks-item:nth-child(6) a {
-  background-image: url($assets-cogs-svg);
+  font-size: 28px;
 }
 
 .blocks-item-internal {
