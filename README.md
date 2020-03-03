@@ -26,6 +26,24 @@ Contact Kevin Becker for more info
 3. Commit & push your updated files included the manifest.json, scss files, css file, etc.
 4. In Zendesk guide under themes find this theme (currently called "Custom Theme") click the 3 vertical dots and select Update from Github
 
+## Theme Settings
+
+###Colors:
+
+* Brand color: 7199C6
+* Brand text color: FFFFFF
+* Text color: 555555
+* Link color: 7199C6
+* Background color: FFFFFF
+
+###Brand:
+
+* Logo: LincolnHelp logo svg
+* Favicon: (?) logo svg
+* Home Hero: header2lt.jpg
+* Community hero: community-header2-lt.jpg
+* Community banner: community.jpg
+
 ---
 
 ## Working with Zendesk Custom Theme (advanced method: Windows 7 VM)
