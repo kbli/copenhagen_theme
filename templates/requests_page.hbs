@@ -91,7 +91,7 @@
                 <!-- Visible on mobile -->
                 <div class="requests-table-meta meta-group">
                   <span class="meta-data">#{{id}}</span>
-                  <span class="meta-data">{{date created_at timeago=true}}</span>
+                  <span class="meta-data">{{date created_at format='short'}}</span>
                   <span class="status-label status-label-{{status}}" title="{{status_description}}">
                     {{status_name}}
                   </span>
@@ -100,12 +100,12 @@
               <td>#{{id}}</td>
               <td>
                 {{#is ../current_filter.identifier 'my'}}
-                  {{date created_at timeago=true}}
+                  {{date created_at format='short'}}
                 {{else}}
                   {{requester.name}}
                 {{/is}}
               </td>
-              <td>{{date updated_at timeago=true}}</td>
+              <td>{{date updated_at format='short'}}</td>
               <td class="requests-table-status">
                 <span class="status-label status-label-{{status}}" title="{{status_description}}">
                   {{status_name}}

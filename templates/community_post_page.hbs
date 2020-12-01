@@ -52,10 +52,10 @@
 
                 <ul class="meta-group">
                   {{#if post.editor}}
-                    <li class="meta-data">{{date post.edited_at timeago=true}}</li>
+                    <li class="meta-data">{{date post.edited_at format='short'}}</li>
                     <li class="meta-data">{{t 'edited'}}</li>
                   {{else}}
-                    <li class="meta-data">{{date post.created_at timeago=true}}</li>
+                    <li class="meta-data">{{date post.created_at format='short'}}</li>
                   {{/if}}
                 </ul>
               </div>
@@ -149,10 +149,10 @@
 
                     <ul class="meta-group">
                       {{#if editor}}
-                        <li class="meta-data">{{date edited_at timeago=true}}</li>
+                        <li class="meta-data">{{date edited_at format='short'}}</li>
                         <li class="meta-data">{{t 'edited'}}</li>
                       {{else}}
-                        <li class="meta-data">{{date created_at timeago=true}}</li>
+                        <li class="meta-data">{{date created_at format='short'}}</li>
                       {{/if}}
                     </ul>
                   </div>
