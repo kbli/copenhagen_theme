@@ -78,6 +78,10 @@
   &-body {
     @include content-body;
     > p:last-child { margin-bottom: 0; }
+
+    td, th {
+      padding: 5px;
+    } 
   }
 
   &-content {

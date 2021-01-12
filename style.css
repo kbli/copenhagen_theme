@@ -1432,6 +1432,10 @@ ul {
   margin-bottom: 0;
 }
 
+.article-body td, .article-body th {
+  padding: 5px;
+}
+
 .article-content {
   line-height: 1.6;
   margin: 40px 0;
